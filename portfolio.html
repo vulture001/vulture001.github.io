@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<img src="head.png"><h1>cameronos</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+<p>I build. Here is some of my work.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="skull.png" alt="Mountains" style="width:100%">
+      <h3>Gigantic Crying Skull</h3>
+      <p>Made by me back in version 1.4.7<br>Standing at 8,500 blocks hollow and 61 blocks high, the skull was the biggest project I have ever ventured on</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="skull2.png" alt="Lights" style="width:100%">
+      <h3>Gigantic Crying Skull</h3>
+      <p>Inside the skull consisted of multiple rooms and one large area</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="village1.png" alt="Nature" style="width:100%">
+      <h3>Medieval Town</h3>
+      <p>Windmill on an island</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="village2.png" alt="Mountains" style="width:100%">
+      <h3>Medieval Town</h3>
+      <p>The town consists of a blacksmith, city hall, one house, one farm houes, a well, and a mineshaft</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <p>Contact me at camekommd@gmail.com</p>
+  <p><a href="index.html">Back home</a>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
